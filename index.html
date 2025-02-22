@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Admissions Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="" class="nav_logo">Admissions</a>
+            <!-- nav manu -->
+            <nav class="nav_manu" id="nav_manu">
+                <ul class="nav_list" id="nav_list">
+                    <li>
+                        <a href="index.html" class="nav_link active">Login</a>
+                    </li>
+                    <li>
+                        <a href="aboutUs.html" class="nav_link">About Me</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="nav_link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </nav>
+    </header>
+    <div class="form-container">
+        <form class="admissions-form">
+            <h2>COLLEGE ADMISSIONS FORM</h2>
+            <p></p>
+            <div class="input-group">
+                <label>Enter your admission information below</label>
+                <div class="flex-row">
+                    <input type="text" placeholder="First Name" required>
+                    <input type="text" placeholder="Middle Initial" required>
+                    <input type="text" placeholder="Last Name" required>
+                </div>
+            </div>
+            <div class="input-group">
+                <label>Date of Birth</label>
+                <div class="flex-row">
+                    <input lang="en-GB" type="date" required >
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label>Gender</label>
+                <div class="flex-row">
+                    <label><input type="radio" name="gender" value="Male" required> Male</label>
+                    <label><input type="radio" name="gender" value="Female"> Female</label>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label>which country are you a Live in ?</label>
+                <select required>
+                    <option disabled selected>Please Select</option>
+                    <option>KSA</option>
+                    <option>Yemen</option>
+                    <option>Quater</option>
+                    <option>Egypet</option>
+                    <option>Gordan</option>
+                    <option>Palstain</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label>Phone</label>
+                <input type="tel" placeholder="000-000-0000" required maxlength="9">
+            </div>
+
+            <div class="input-group">
+                <label>E-mail Address</label>
+                <input type="email" placeholder="example@example.com" required>
+            </div>
+
+            <div class="input-group">
+                <label>Mailing Address</label>
+                <input type="text" placeholder="Street Address" required>
+                <div class="flex-row">
+                    <input type="text" placeholder="City" required>
+                    <input type="text" placeholder="State / Province" required>
+                </div>
+                <input type="text" placeholder="Postal / Zip Code" required>
+            </div>
+
+            <div class="input-group">
+                <label>Emergency Contact</label>
+                <div class="flex-row">
+                    <input type="text" placeholder="First Name" required>
+                    <input type="text" placeholder="Last Name" required>
+                </div>
+                <input type="text" placeholder="Relationship" required>
+                <input type="tel" placeholder="Phone Number" required>
+                <input type="email" placeholder="example@example.com" required>
+            </div>
+
+            <button type="submit" class="submit-btn">Send</button>
+        </form>
+    </div>
+</body>
+</html>

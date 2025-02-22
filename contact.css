@@ -1,0 +1,61 @@
+/* Start contact section */
+.tit {
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 40px;
+    margin-top: 50px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: black;
+}
+
+.tit::before,
+.tit::after {
+    content: "";
+    width: 80px;
+    height: 5px;
+    position: absolute;
+    left: 50%;
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+    bottom: -10px;
+    background-color: gray;
+}
+
+.tit::after {
+    width: 40px;
+    bottom: -20px;
+}
+
+.contact-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #222;
+}
+
+.contact-sec .contain-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.contact-sec .contain-contact .img-contact {
+    max-width: 400px;
+}
+
+.contact-sec .contain-contact .img-contact img {
+    max-width: 100%;
+}
+
+.contact-sec .contain-contact .parg-contact {
+    line-height: 1.6;
+    font-size: 16px;
+    max-width: 500px;
+    font-weight: 600;
+}
+
+/* End contact section */
